@@ -13,6 +13,8 @@ class Client::ContactsController < ApplicationController
     client_params = {
                      first_name: params[:first_name],
                      last_name: params[:last_name],
+                     bio: params[:bio],
+                     middle_name: params[:middle_name],
                      email: params[:email],
                      phone_number: params[:phone_number]
                     }
@@ -43,6 +45,8 @@ class Client::ContactsController < ApplicationController
     client_params = {
                      first_name: params[:first_name],
                      last_name: params[:last_name],
+                     middle_name: params[:middle_name],
+                     bio: params[:bio],
                      email: params[:email],
                      phone_number: params[:phone_number]
                     }
