@@ -4,6 +4,11 @@
 <h4>Full Name <%= @contact["formatted"]["full_name"] %></h4>
 <h4>Email: <%= @contact["email"] %></h4>
 <h4>bio: <%= @contact["bio"] %></h4>
+<h4>groups:</h4>
+<% @contact["groups"].each do |group| %>
+  <p><%= group['name'] %></p>
+<% end %>
+
 <h4>Phone Number: <%= @contact["formatted"]["japanese_country_code"] %></h4>
 <h2>Updated At <%= @contact["formatted"]["friendly_updated_at"] %></h2>
 
